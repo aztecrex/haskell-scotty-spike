@@ -13,3 +13,5 @@ Try to get a minimum useful REST service from Scotty
 ## Run It
 From the project dir: ```stack runghc ./app/Main.hs```
 
+## Feel Its Power!
+From somewhere: ```curl -v localhost:8099/hello```
