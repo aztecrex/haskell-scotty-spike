@@ -2,7 +2,7 @@ name:                haskell-scotty-spike
 version:             0.1.0.0
 synopsis:            Initial project template from stack
 description:         Please see README.md
-homepage:            http://github.com/githubuser/haskell-scotty-spike#readme
+homepage:            http://github.com/aztecrex/haskell-scotty-spike#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Author name here
@@ -44,4 +44,4 @@ test-suite haskell-scotty-spike-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/haskell-scotty-spike
+  location: https://github.com/aztecrex/haskell-scotty-spike
