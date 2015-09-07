@@ -16,8 +16,12 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Resources
+                     , Persistence
   build-depends:       base >= 4.7 && < 5
                      , scotty
+                     , mysql-simple
+                     , transformers
+                     , text
   default-language:    Haskell2010
 
 executable haskell-scotty-spike-exe
