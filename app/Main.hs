@@ -1,7 +1,8 @@
 module Main where
 
-import Resources
 import Web.Scotty(scotty)
 
+import Resources
+
 main :: IO ()
-main = scotty 8099  (hello >> answer)
+main = scotty 8099 resources
