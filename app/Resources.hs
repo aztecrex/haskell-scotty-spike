@@ -1,6 +1,11 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Resources (resources) where
+{-
+The resources module is all about creating actions and binding them
+to resource names.  The product of this module is a single ScottyM()
+instance containing all of the application service resources.
+-}
 
 import Web.Scotty (ScottyM, ActionM, get, text)
 import Control.Monad.IO.Class (liftIO)

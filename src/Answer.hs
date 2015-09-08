@@ -1,7 +1,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Answer (answer) where
-
+{-
+This  module connects to a Database to find the answer.
+-}
 import Database.MySQL.Simple
 
 answer :: IO Int
