@@ -20,5 +20,5 @@ action r = do
 
 resources :: ScottyM()
 resources = do
-  get "/hello" $ action Hello.hello
-  get "/answer" $ action $ fmap show Answer.answer
+  get "/hello" $ action hello
+  get "/answer" $ action $ fmap show answer
