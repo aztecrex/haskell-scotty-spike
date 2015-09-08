@@ -14,9 +14,8 @@ Try to get a minimum useful REST service from Scotty
    root account and a database called 'test'. Sorry. Fixing it shortly.
 
 ## Run It
-From the project dir: ```stack runghc ./app/Main.hs```
+From the project dir: ```stack exec haskell-scotty-spike-exe```
 
 ## Feel Its Power!
 * Be greeted: ```curl -v localhost:8099/hello```
 * Access MySQL data: ```curl -v localhost:8099/answer```
-
