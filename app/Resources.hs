@@ -10,6 +10,9 @@ instance containing all of the application service resources.
 import Web.Scotty (ScottyM, ActionM, get, text)
 import Control.Monad.IO.Class (liftIO)
 import Data.Text.Lazy (pack)
+
+import Configure
+
 import Hello
 import Answer
 
@@ -18,7 +21,7 @@ action r = do
   a <- liftIO r
   text $ pack a
 
-resources :: ScottyM()
-resources = do
+resources :: Environment -> ScottyM()
+resources _ = do
   get "/hello" $ action hello
   get "/answer" $ action $ fmap show answer

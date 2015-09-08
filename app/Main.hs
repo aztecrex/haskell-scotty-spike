@@ -7,15 +7,9 @@ import Web.Scotty(scotty)
 import System.Environment(lookupEnv)
 
 import Resources
+import Configure
 
 main :: IO ()
-main = scotty 8099 resources
-
-
-data Environment = DEVELOPMENT | PRODUCTION
-env :: IO Environment
-env = do
-  envtoken <- lookupEnv "appenv"
-  return $ select envtoken where
-    select (Just "production") = PRODUCTION
-    select _                   = DEVELOPMENT
+main = do
+  e <- env
+  scotty 8099 $ resources e
